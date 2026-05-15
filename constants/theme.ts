@@ -5,9 +5,15 @@
 
 import { Platform } from 'react-native';
 
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
+// The app's primary accent color in light mode — a deep, dark red.
+const tintColorLight = '#8B1A1A';
 
+// The app's primary accent color in dark mode — a softer, lighter red so it's still readable on dark backgrounds.
+const tintColorDark = '#D46A6A';
+
+// Colors is a dictionary that holds every named color used in the app,
+// organized into two groups: one for light mode and one for dark mode.
+// Components import from here so colors stay consistent across the whole app.
 export const Colors = {
   light: {
     text: '#11181C',
@@ -27,6 +33,9 @@ export const Colors = {
   },
 };
 
+// Fonts picks the correct font family names for each platform the app runs on.
+// iPhone, Android, and web browsers each have their own system fonts, so this
+// ensures text looks native and sharp on every device.
 export const Fonts = Platform.select({
   ios: {
     /** iOS `UIFontDescriptorSystemDesignDefault` */
