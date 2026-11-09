@@ -1,8 +1,20 @@
-# Welcome to your Expo app 👋
+# Jesuit App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A mobile app for the Curia of the Society of Jesus, built with React Native and Expo, with the help of Claude Code. It delivers daily spiritual content to Jesuits and others around the world.
 
-## Get started
+## Features
+
+- Animated welcome flow
+- Daily spiritual content
+- Simple navigation between screens
+
+## Tech Stack
+
+- React Native
+- Expo (with Expo Router for file-based routing)
+- TypeScript
+
+## Getting Started
 
 1. Install dependencies
 
@@ -16,35 +28,15 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+Then open it in an iOS simulator, an Android emulator, or Expo Go.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Project Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
 ```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+app/         Screens and routes
+components/  Reusable UI components
+constants/   Shared values (colors, etc.)
+hooks/       Custom React hooks
+assets/      Images and static files
+scripts/     Utility scripts
+```
